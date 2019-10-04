@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ParkingInformation"
+    tools:showIn="@layout/app_bar_parking_information">
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbars="vertical"
+      android:fillViewport="false"
+
+      >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        >
+
+      <ImageView
+          android:id="@+id/imageView_Parking_Info"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:adjustViewBounds="true"
+          android:src="@drawable/parkinglot"
+          android:scaleType="center"
+          />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@color/white"
+
+          >
+        <TextView
+            android:id="@+id/textView_ParkingName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textIsSelectable="true"
+            android:layout_marginTop="@dimen/padd_10"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/textView_Address"
+            android:text="Address"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/padd_10"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+
+      </LinearLayout>
+      <RelativeLayout
+          android:id="@+id/relativeLayout1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          >
+
+        <ImageView
+            android:id="@+id/imageView_call"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/call"
+            android:background="@color/editTextBG"
+            android:tint="@color/black" />
+        <TextView
+            android:id="@+id/textView_Call"
+            android:text="Call"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:padding="8dp"
+            android:layout_alignBottom="@+id/imageView_call"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView_call"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editTextBG"
+            android:layout_marginBottom="10dp"
+            />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/relativeLayout2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:gravity="center"
+          >
+
+        <ImageView
+            android:id="@+id/imageView_directions"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/directions"
+            android:background="@color/editTextBG"
+            android:tint="@color/black" />
+        <TextView
+            android:id="@+id/textView_directions"
+            android:text="Get Directions"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:padding="8dp"
+            android:layout_alignBottom="@+id/imageView_directions"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView_directions"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editTextBG"
+            />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/relativeLayout3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          >
+
+        <ImageView
+            android:id="@+id/imageView_availability"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/available"
+            android:background="@color/editTextBG"
+            android:tint="@color/black" />
+        <TextView
+            android:id="@+id/textView_availability"
+            android:text="Availability"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:padding="8dp"
+            android:layout_alignBottom="@+id/imageView_availability"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView_availability"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editTextBG"
+            />
+      </RelativeLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@color/editTextBG"
+          >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/editTextBG"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:text="STRUCTURE TYPE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editTextBG"
+            />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@color/white"
+          android:layout_marginBottom="10dp"
+          >
+
+        <TextView
+            android:id="@+id/textView_ParkingLotType"
+            android:text="Open air/ Restricted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padd_10"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@color/editTextBG"
+          >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/editTextBG"
+            />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:text="RATES "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/editTextBG"
+            />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/textView_Rates"
+          android:text="50ksh/hr"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/padd_10"
+          android:textColor="@color/black"
+          android:textSize="17dp" />
+
+      <TextView
+          android:id="@+id/textView_Operation_Time"
+          android:text="12 - 9 pm"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/padd_10"
+          android:textColor="@color/black"
+          android:textSize="17dp" />
+      <TextView
+          android:id="@+id/textViewline1"
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/colorAccent"
+          android:visibility="gone"
+          />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notReservedTextView"
+            android:text="This Parking lot cannot be reserved as its not operated by SmartPark. However we can guide you to the parking space."
+            android:visibility="gone"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/textViewline2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorAccent"
+            android:visibility="gone"
+            />
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/reserveButton"
+          android:background="@color/colorAccent"
+          android:text="Reserve"
+          android:textColor="@color/white"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp"
+          android:ellipsize="end"
+          android:visibility="gone"
+
+          />
+
+
+
+    </LinearLayout>
+  </ScrollView>
+</android.support.constraint.ConstraintLayout>
