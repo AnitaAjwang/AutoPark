@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+  <item android:title="My Account">
+    <menu>
+      <item
+          android:id="@+id/nav_logout"
+          android:icon="@drawable/logout2"
+          android:title="Logout" />
+
+      <item
+          android:id="@+id/nav_edit_profile"
+          android:icon="@drawable/editprofile"
+          android:title="Edit Profile" />
+    </menu>
+  </item>
+
+  <item android:title="Tools">
+    <menu>
+      <item
+          android:id="@+id/nav_find_parking"
+          android:icon="@drawable/parkinglots2"
+          android:title="Find Parking" />
+      <item
+          android:id="@+id/nav_add_parking"
+          android:icon="@drawable/add_parking"
+          android:title="Add parking" />
+      <item
+          android:id="@+id/nav_my_vehicles"
+          android:icon="@drawable/mycars"
+          android:title="My Vehicles" />
+
+    </menu>
+  </item>
+
+  <item android:title="Communicate">
+    <menu>
+      <item
+          android:id="@+id/nav_share"
+          android:icon="@drawable/share2"
+          android:title="Share" />
+      <item
+          android:id="@+id/nav_send"
+          android:icon="@drawable/sendmessage"
+          android:title="Send" />
+
+    </menu>
+  </item>
+
+</menu>
